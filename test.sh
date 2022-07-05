@@ -60,6 +60,12 @@ case "${1}" in
   test_argmax)
     "${python_exec}" -m unittest unittests.TestArgmax -v
     ;;
+  test_argmax_length_1)
+    "${python_exec}" -m unittest unittests.TestArgmax.test_argmax_length_1 -v
+    ;;
+    test_argmax_standard)
+    "${python_exec}" -m unittest unittests.TestArgmax.test_argmax_standard -v
+    ;;
   test_dot)
     "${python_exec}" -m unittest unittests.TestDot -v
     ;;
