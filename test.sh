@@ -69,6 +69,24 @@ case "${1}" in
   test_dot)
     "${python_exec}" -m unittest unittests.TestDot -v
     ;;
+  test_dot_standard)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_standard -v
+    ;;
+  test_dot_length_1)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_length_1 -v
+    ;;
+  test_dot_length_error)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_length_error -v
+    ;;
+  test_dot_length_error2)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_length_error2 -v
+    ;;
+  test_dot_stride)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_stride -v
+    ;;
+  test_dot_stride_error1)
+    "${python_exec}" -m unittest unittests.TestDot.test_dot_stride_error1 -v
+    ;;
   test_matmul)
     "${python_exec}" -m unittest unittests.TestMatmul -v
     ;;
