@@ -90,6 +90,40 @@ case "${1}" in
   test_matmul)
     "${python_exec}" -m unittest unittests.TestMatmul -v
     ;;
+  test_matmul_square)
+    "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_square -v
+    ;;
+  test_matmul_nonsquare_1)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_nonsquare_1 -v
+    ;;
+  test_matmul_nonsquare_2)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_nonsquare_2 -v
+    ;;
+  test_matmul_length_1)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_length_1 -v
+    ;;
+  test_matmul_zero_dim_m0)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_zero_dim_m0 -v
+    ;;
+  test_matmul_negative_dim_m0_y)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_negative_dim_m0_y -v
+    ;;
+  test_matmul_negative_dim_m0_x)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_negative_dim_m0_x -v
+    ;;
+  test_matmul_zero_dim_m1)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_zero_dim_m1 -v
+    ;;
+  test_matmul_negative_dim_m1_y)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_negative_dim_m1_y -v
+    ;;
+  test_matmul_negative_dim_m1_x)
+  "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_negative_dim_m1_x -v
+    ;;
+  
+    test_matmul_unmatched_dims)
+    "${python_exec}" -m unittest unittests.TestMatmul.test_matmul_unmatched_dims -v
+    ;;
   test_read_matrix)
     "${python_exec}" -m unittest unittests.TestReadMatrix -v
     ;;
